@@ -1,0 +1,114 @@
+body {
+    background-color: lightblue;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from {background-color: lightblue;}
+    to {background-color: lightgreen;}
+}
+
+.box-title {
+    background-color: lightcoral;
+    width: 240px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.typing-demo {
+    font-family: cursive;
+    font-size: 30px;
+    color: black;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    display:block;
+    animation: typewriter 5s steps(7) infinite, blinking-cursor 0.8s infinite;
+    animation-fill-mode: forwards
+}
+
+@keyframes typewriter {
+    0% { width:0 }
+    25% { width: 70% }
+    48% { width: 100% }
+    50% { width: 100% }
+    55% { width: 100% }
+    75% { width: 70%; }
+    85% { width: 30%; }
+    100% { width: 0; }
+}
+
+h4 {
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.calculator{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 100%;
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: right;
+    font-size: 36px;
+    border: none;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.calculator-button {
+    width: 100%;
+}
+
+.row{
+    display: flex;
+}
+
+button  {
+    height: 80px;
+    background-color: gray;
+    border: 1px solid black;
+    font-size: 32px;
+    color: white;
+    width: 25%;
+    outline: none;
+}
+
+.zero-btn {
+    border-bottom-left-radius: 10px;
+}
+
+.all-clear, .zero-btn {
+    width: 50%;
+}
+
+.operator, .equal-sign {
+    background-color: orange;
+}
+
+.equal-sign {
+    border-bottom-right-radius: 10px;
+}
+
+button:hover {
+    background-color: darkgray;
+}
+
+.operator:hover, .equal-sign:hover {
+    background-color: darkorange;
+}
+
